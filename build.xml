@@ -8,8 +8,8 @@
 		<pathelement path="." />
 	</path>
 
-	<target name="junit" fork="no">
-		<junit printsummary="yes" haltonfailure="no">
+	<target name="junit">
+		<junit printsummary="yes" haltonfailure="no" fork="no">
 			<classpath refid="junit.class.path" />
       <formatter type="plain" usefile="false" />
       <batchtest>
