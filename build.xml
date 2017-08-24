@@ -12,9 +12,9 @@
 		<junit printsummary="yes" haltonfailure="no" fork="no">
 			<classpath refid="junit.class.path" />
       <formatter type="plain" usefile="false" />
-      <batchtest>
+      <test>
         <fileset dir="." includes="*.java" />
-      </batchtest>
+      <test>
 		</junit>
 	</target>
 
