@@ -14,10 +14,10 @@
 	<target name="junit" depends="compile">
 		<junit printsummary="yes" haltonfailure="no" fork="no">
 
-      <formatter type="plain" usefile="false" />
 			<classpath refid="junit.class.path" />
-      
+
       <batchtest todir="${basedir}" fork="true">
+        <formatter type="plain" usefile="false" />
         <fileset dir="${basedir}">
           <include name="testRunner.class"/>
         </fileset>
