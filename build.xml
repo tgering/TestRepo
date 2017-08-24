@@ -22,7 +22,7 @@
 			<formatter type="xml" />
 			<batchtest todir=".">
 				<fileset dir=".">
-					<include name="**/*Test*.java" />
+					<include name="testRunner" />
 				</fileset>
 			</batchtest>
 		</junit>
