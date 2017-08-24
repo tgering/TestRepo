@@ -12,7 +12,7 @@
 	<target name="junit">
 		<junit printsummary="yes" haltonfailure="no">
 			<classpath refid="junit.class.path" />
-      <test name="testRunner" haltonfailure="no" outfile="result">
+      <test name="InRangeTest" haltonfailure="no" outfile="result">
       <formatter type="plain"/>
       <formatter type="xml"/>
     </test>
