@@ -7,19 +7,8 @@
 		<pathelement location="." />
 	</path>
 
-
-	<!-- Deletes the existing build, docs and dist directory-->
-	<target name="clean">
-		<delete dir="report" />
-	</target>
-
-	<!-- Creates the  build, docs and dist directory-->
-	<target name="makedir">
-		<mkdir dir="report" />
-	</target>
-
 	<!-- Compiles the java code (including the usage of library for JUnit -->
-	<target name="compile" depends="clean, makedir">
+	<target name="compile">
 		<javac srcdir="." destdir=".">
 			<classpath refid="junit.class.path" />
 		</javac>
