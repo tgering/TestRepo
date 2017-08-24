@@ -1,34 +1,24 @@
 <?xml version="1.0"?>
 <project name="JUNIT" default="main" basedir="..">
-	<!-- Define the classpath which includes the junit.jar and the classes after compiling-->
+
+  <!-- Define the classpath which includes the junit.jar and the classes after compiling-->
 	<path id="junit.class.path">
 		<pathelement location="/usr/share/java/junit4-4.5.jar" />
 		<pathelement location="joejoooe4.jar" />
 		<pathelement location="." />
 	</path>
 
-	<!-- Compiles the java code (including the usage of library for JUnit -->
-	<target name="compile">
-		<javac srcdir="." destdir=".">
-			<classpath refid="junit.class.path" />
-		</javac>
-	</target>
-
-	<!-- Run the JUnit Tests -->
-	<!-- Output is XML, could also be plain-->
 	<target name="junit" depends="compile">
 		<junit printsummary="on" fork="true" haltonfailure="no">
 			<classpath refid="junit.class.path" />
-			<formatter type="xml" />
-			<batchtest todir=".">
-				<fileset dir=".">
-					<include name="testRunner.class" />
-				</fileset>
-			</batchtest>
+      <test name="testRunner" haltonfailure="no" outfile="result">
+      <formatter type="plain"/>
+      <formatter type="xml"/>
+    </test>
 		</junit>
 	</target>
 
-	<target name="main" depends="compile, junit">
+	<target name="main" depends="junit">
 		<description>Main target</description>
 	</target>
 
