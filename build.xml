@@ -8,7 +8,7 @@
 	</path>
 
   <target name="compile">
-    <javac srcdir="${basedir}"/>
+    <javac srcdir="${basedir}" includeantruntime="false"/>
   </target>
 
 	<target name="junit" depends="compile">
@@ -18,7 +18,7 @@
 
       <batchtest todir="${basedir}" fork="true">
         <formatter type="plain" usefile="false" />
-        <fileset dir="/var/lib/jenkins/workspace/javaBuild/">
+        <fileset dir="${basedir}">
           <include name="testRunner.class"/>
         </fileset>
       </batchtest>
