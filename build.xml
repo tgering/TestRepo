@@ -15,7 +15,6 @@
 	<target name="junit" depends="compile">
 		<junit printsummary="yes" haltonfailure="no" fork="no">
 			<classpath refid="junit.class.path" />
-      <include name="testRunner.class"/>
       <test name="testRunner">
         <formatter type="plain" usefile="false" />
       </test>
