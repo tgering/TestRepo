@@ -9,9 +9,7 @@
 	</path>
 
   <target name="compile">
-    <javac>
-      <fileset dir="." includes="*.java"/>
-    </javac>
+    <javac srcdir="${basedir}"/>
   </target>
 
 	<target name="junit" depends="compile">
