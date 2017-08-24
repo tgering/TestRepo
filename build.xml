@@ -3,6 +3,9 @@
 
     <classpath>
       <pathelement path="/usr/share/java/junit4-4.5.jar"/>
+      <pathelement path="joejoooe4.jar"/>
+      <pathelement path="."/>
+      <pathelement location="."/>
     </classpath>
 
     <test name="testRunner" haltonfailure="yes" outfile="result">
