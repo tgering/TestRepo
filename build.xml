@@ -8,15 +8,13 @@
 		<pathelement path="." />
 	</path>
 
-	<target name="junit">
+	<target name="junit" fork="no">
 		<junit printsummary="yes" haltonfailure="no">
 			<classpath refid="junit.class.path" />
+      <formatter type="plain" usefile="false" />
       <batchtest>
         <fileset dir="." includes="*.java" />
       </batchtest>
-      <formatter type="plain" usefile="false" />
-      <formatter type="plain"/>
-      <formatter type="xml"/>
 		</junit>
 	</target>
 
