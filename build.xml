@@ -11,10 +11,9 @@
 	<target name="junit">
 		<junit printsummary="yes" haltonfailure="no" fork="no">
 			<classpath refid="junit.class.path" />
-      <formatter type="plain" usefile="false" />
-      <test>
-        <fileset dir="." includes="*.java" />
-      <test>
+      <test name="testRunner">
+        <formatter type="plain" usefile="false" />
+      </test>
 		</junit>
 	</target>
 
