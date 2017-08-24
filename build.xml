@@ -10,9 +10,7 @@
 
   <target name="compile">
     <javac>
-      <path id="classpath">
-        <fileset dir="." includes="*.jar"/>
-      </path>
+      <fileset dir="." includes="*.java"/>
     </javac>
   </target>
 
