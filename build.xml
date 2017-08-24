@@ -7,11 +7,13 @@
     <pathelement location="/usr/share/java/junit4-4.5.jar"/>
   </path>
 
-  <java classname="testRunner">
-    <classpath>
-        <pathelement path="."/>
-    </classpath>
-</java>
+  <javac destdir="."
+         classpath="testRunner"
+         debug="on">
+    <src path="."/>
+    <include name="/usr/share/java/junit4-4.5"/>
+    <include name="joejoooe4.jar"/>
+  </javac>
 
   <!-- <target name="test" depends="test-compile">
     <junit printsummary="on" haltonfailure="yes" fork="true">
