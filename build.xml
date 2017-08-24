@@ -3,7 +3,7 @@
 
   <!-- Define the classpath which includes the junit.jar and the classes after compiling-->
 	<path id="junit.class.path">
-    <pathelement location=".">
+    <pathelement location="." />
 		<pathelement path="/usr/share/java/junit4-4.5.jar" />
 		<pathelement path="joejoooe4.jar" />
 		<pathelement path="." />
