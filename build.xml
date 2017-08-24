@@ -8,6 +8,7 @@
   </path>
 
   <javac destdir="."
+         source="*.java"
          classpath="testRunner"
          debug="on">
     <src path="."/>
