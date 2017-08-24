@@ -12,7 +12,7 @@
 		<junit printsummary="yes" haltonfailure="no">
 			<classpath refid="junit.class.path" />
       <batchtest>
-        <fileset dir="." includes="testRunner.class" />
+        <fileset dir="." includes="*.java" />
         <formatter type="plain" usefile="false" />
         <formatter type="plain"/>
         <formatter type="xml"/>
