@@ -16,6 +16,15 @@
     <include name="joejoooe4.jar"/>
   </javac>
 
+  <target name="run" depends="compile, input-runargs" description="run the project">
+  <!-- You can use exec here, depending on your needs -->
+    <java classname="testRunner">
+      <classpath>
+        <path refid="classpath.test"/>
+      </classpath>
+    </java>
+  </target>
+
   <!-- <target name="test" depends="test-compile">
     <junit printsummary="on" haltonfailure="yes" fork="true">
         <classpath>
