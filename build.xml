@@ -8,7 +8,15 @@
 		<pathelement path="." />
 	</path>
 
-	<target name="junit">
+  <target name="compile">
+    <javac>
+      <path id="classpath">
+        <fileset dir="." includes="*.jar"/>
+      </path>
+    </javac>
+  </target>
+
+	<target name="junit" depends="compile">
 		<junit printsummary="yes" haltonfailure="no" fork="no">
 			<classpath refid="junit.class.path" />
       <test name="testRunner">
