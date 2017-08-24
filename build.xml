@@ -13,6 +13,7 @@
 		<junit printsummary="yes" haltonfailure="no">
 			<classpath refid="junit.class.path" />
       <test name="InRangeTest" haltonfailure="no" outfile="result">
+      <formatter type="plain" usefile="false" />
       <formatter type="plain"/>
       <formatter type="xml"/>
     </test>
