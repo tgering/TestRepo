@@ -5,14 +5,14 @@
 	<path id="junit.class.path">
 		<pathelement path="/usr/share/java/junit4-4.5.jar" />
 		<pathelement path="joejoooe0.jar" />
-		<pathelement path="/" />
+		<pathelement path="." />
 	</path>
 
 	<target name="junit">
 		<junit printsummary="yes" haltonfailure="no">
 			<classpath refid="junit.class.path" />
       <batchtest>
-        <fileset dir="/" includes="testRunner.class" />
+        <fileset dir="." includes="testRunner.class" />
         <formatter type="plain" usefile="false" />
         <formatter type="plain"/>
         <formatter type="xml"/>
