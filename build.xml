@@ -8,7 +8,7 @@
 	</path>
 
   <target name="compile">
-    <javac srcdir="${basedir}" includeantruntime="false"/>
+    <javac srcdir="${basedir}"/>
   </target>
 
 	<target name="junit" depends="compile">
