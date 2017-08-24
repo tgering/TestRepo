@@ -7,22 +7,8 @@
     <pathelement location="/usr/share/java/junit4-4.5.jar"/>
   </path>
 
-  <javac destdir="."
-         source="*.java"
-         classpath="testRunner"
-         debug="on">
-    <src path="."/>
-    <include name="/usr/share/java/junit4-4.5"/>
-    <include name="joejoooe4.jar"/>
-  </javac>
-
-  <target name="run" depends="compile, input-runargs" description="run the project">
-  <!-- You can use exec here, depending on your needs -->
-    <java classname="testRunner">
-      <classpath>
-        <path refid="classpath.test"/>
-      </classpath>
-    </java>
+  <target name="run">
+        <java class="testRunner" fork="true"/>
   </target>
 
   <!-- <target name="test" depends="test-compile">
