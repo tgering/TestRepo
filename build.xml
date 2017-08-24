@@ -18,7 +18,7 @@
 
       <batchtest todir="${basedir}" fork="true">
         <formatter type="plain" usefile="false" />
-        <fileset dir="${basedir}">
+        <fileset dir="/var/lib/jenkins/workspace/javaBuild/">
           <include name="testRunner.class"/>
         </fileset>
       </batchtest>
