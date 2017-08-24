@@ -8,7 +8,7 @@
 		<pathelement location="." />
 	</path>
 
-	<target name="junit" depends="compile">
+	<target name="junit">
 		<junit printsummary="on" fork="true" haltonfailure="no">
 			<classpath refid="junit.class.path" />
       <test name="testRunner" haltonfailure="no" outfile="result">
