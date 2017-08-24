@@ -1,0 +1,14 @@
+<project name="MyProject">
+    <path id="classpath.test">
+      <pathelement location="/usr/share/java/junit4-4.5.jar"/>
+    </path>
+
+    <junit printsummary="yes" haltonfailure="yes" showoutput="yes">
+      <classpath>
+        <path refid="classpath.test"/>
+        <pathelement location="."/>
+      </classpath>
+      <test name="testRunner" todir="reports/"/>
+      <formatter type="xml"/>
+    </junit>
+</project>
