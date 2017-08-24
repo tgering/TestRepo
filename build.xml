@@ -1,9 +1,11 @@
 <project name="junit-example">
-  <classpath>
-    <pathelement path="/usr/share/java/junit4-4.5.jar"/>
-  </classpath>
-
   <junit>
+
+    <classpath>
+      <pathelement path="/usr/share/java/junit4-4.5.jar"/>
+    </classpath>
+
     <test name="testRunner"/>
+
   </junit>
 </project>
