@@ -23,7 +23,7 @@
       <artifactId>com.sample</artifactId>
       <version>1.0</version>
       <scope>system</scope>
-      <systemPath>${project.basedir}/joejoooe4.jar</systemPath>
+      <systemPath>${project.basedir}/joejoooe0.jar</systemPath>
     </dependency>
   </dependencies>
 
