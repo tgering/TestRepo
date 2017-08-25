@@ -17,6 +17,14 @@
       <version>4.8.2</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>sample</groupId>
+      <artifactId>com.sample</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/joejoooe4.jar</systemPath>
+    </dependency>
   </dependencies>
 
   <build>
