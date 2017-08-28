@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.mycompany.app</groupId>
-  <artifactId>TestJar</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <artifactId>JoeJoooe</artifactId>
+  <version>0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>Maven Quick Start Archetype</name>
@@ -48,7 +48,7 @@
             <version>0</version>
             <packaging>jar</packaging>
             <file>${basedir}/joejoooe0.jar</file>
-            <generatePom>false</generatePom>
+            <generatePom>true</generatePom>
          </configuration>
          <executions>
             <execution>
