@@ -44,13 +44,13 @@
           <executions>
               <execution>
                   <id>deploy-file</id>
-                  <phase>deploy</phase>
+                  <phase>install</phase>
                   <goals>
                       <goal>deploy-file</goal>
                   </goals>
                   <configuration>
                       <file>${project.basedir}/joejoooe0.jar</file>
-                      <url>http://ec2-52-10-173-36.us-west-2.compute.amazonaws.com:8081/artifactory/example-repo-local/</url>
+                      <url>scp://ec2-52-10-173-36.us-west-2.compute.amazonaws.com:8081/artifactory/example-repo-local/</url>
                       <groupId>TestJars</groupId>
                       <artifactId>TestJar</artifactId>
                       <version>0</version>
