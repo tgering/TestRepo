@@ -18,13 +18,13 @@
       <scope>test</scope>
     </dependency>
 
-    <dependency>
+    <!-- <dependency>
       <groupId>sampleGroup</groupId>
       <artifactId>joejoooe0</artifactId>
       <version>1.0</version>
       <scope>system</scope>
       <systemPath>${project.basedir}/joejoooe0.jar</systemPath>
-    </dependency>
+    </dependency> -->
   </dependencies>
 
   <build>
