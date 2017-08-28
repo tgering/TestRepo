@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.mycompany.app</groupId>
+  <artifactId>JoeJoooe</artifactId>
+  <version>0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>Maven Quick Start Archetype</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>sampleGroup</groupId>
+      <artifactId>joejoooe0</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/joejoooe0.jar</systemPath>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+          <!-- Unit tests are run by surefire. -->
+          <!-- Classes under src/test/java called *Test are included automatically. -->
+          <!-- Integration tests are run during the test phase. -->
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.16</version>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
