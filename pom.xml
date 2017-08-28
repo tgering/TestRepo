@@ -49,8 +49,8 @@
                   <goal>jar</goal>
               </goals>
           </execution>
-        </executions> -->
-      </plugin>
+        </executions>
+      </plugin> -->
 
     </plugins>
   </build>
