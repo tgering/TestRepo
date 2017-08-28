@@ -19,8 +19,8 @@
     </dependency>
 
     <dependency>
-      <groupId>sample</groupId>
-      <artifactId>com.sample</artifactId>
+      <groupId>sampleGroup</groupId>
+      <artifactId>joejoooe0</artifactId>
       <version>1.0</version>
       <scope>system</scope>
       <systemPath>${project.basedir}/joejoooe0.jar</systemPath>
@@ -39,25 +39,26 @@
       </plugin>
 
       <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.8.2</version>
-          <executions>
-              <execution>
-                  <id>deploy-file</id>
-                  <phase>install</phase>
-                  <goals>
-                      <goal>deploy-file</goal>
-                  </goals>
-                  <configuration>
-                      <file>${project.basedir}/joejoooe0.jar</file>
-                      <url>http://ec2-52-10-173-36.us-west-2.compute.amazonaws.com:8081/artifactory/example-repo-local/</url>
-                      <groupId>TestJars</groupId>
-                      <artifactId>TestJar</artifactId>
-                      <version>0</version>
-                      <packaging>jar</packaging>
-                  </configuration>
-              </execution>
-          </executions>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-install-plugin</artifactId>
+         <version>2.5.1</version>
+         <configuration>
+            <groupId>navisens.test</groupId>
+            <artifactId>testJar</artifactId>
+            <version>0</version>
+            <packaging>jar</packaging>
+            <file>${basedir}/joejoooe0.jar</file>
+            <generatePom>false</generatePom>
+         </configuration>
+         <executions>
+            <execution>
+               <id>install-jar-lib</id>
+               <goals>
+                  <goal>install-file</goal>
+               </goals>
+               <phase>validate</phase>
+            </execution>
+         </executions>
       </plugin>
 
     </plugins>
