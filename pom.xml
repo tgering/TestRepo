@@ -48,7 +48,7 @@
             <version>0</version>
             <packaging>jar</packaging>
             <file>${basedir}/joejoooe0.jar</file>
-            <generatePom>true</generatePom>
+            <generatePom>false</generatePom>
          </configuration>
          <executions>
             <execution>
